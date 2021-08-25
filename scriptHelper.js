@@ -61,8 +61,8 @@ function formSubmission(document, list, pilotValue, copilotValue, fuelLevelValue
     list.style.visibility = 'visible';
     launchStatus.style.color = "rgb(65, 159, 106)";
     launchStatus.textContent = "Shuttle is Ready for Launch";
-    pilotStatus.innerHTML = "Pilot Chris is ready for launch";
-    copilotStatus.innerHTML = "Co-pilot Bob is ready for launch";
+    pilotStatus.innerHTML = `Pilot ${pilotValue} is ready for launch`;
+    copilotStatus.innerHTML = `Co-pilot ${copilotValue} is ready for launch`;
     fuelStatus.innerHTML = "Fuel level high enough for launch";
     cargoStatus.innerHTML = "Cargo mass low enough for launch";
   }
